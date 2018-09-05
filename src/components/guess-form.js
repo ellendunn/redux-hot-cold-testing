@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
-import { makeGuess } from '../actions';
+import { makeGuess } from '../actions/actions';
 
 import './guess-form.css';
 
@@ -30,10 +30,10 @@ export class GuessForm extends React.Component {
           ref={input => (this.input = input)}
           required
         />
-        <button 
+        <button
           type="submit"
           name="submit"
-          id="guessButton" 
+          id="guessButton"
           className="button"
         >
           Guess
